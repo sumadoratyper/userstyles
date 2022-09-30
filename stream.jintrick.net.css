@@ -1,0 +1,123 @@
+/* ==UserStyle==
+@name         JintrickのマイクロWeb日記
+@version      2022.09.30
+@namespace    https://github.com/sumadoratyper/userstyles
+@homepage     https://github.com/sumadoratyper/userstyles
+@description  Userstyle for JintrickのマイクロWeb日記
+@author       teterumu
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("stream.jintrick.net") {
+  /******************************************************************************* 
+     Front page
+  *******************************************************************************/
+  body > p,
+  body > blockquote{
+    margin-block: 1em;
+  }
+
+  address{
+    text-align: right;
+  }
+
+  /******************************************************************************* 
+     Diary
+  *******************************************************************************/
+  html, body, li{
+    font-family: initial;
+  }
+   
+  h1{
+    visibility: visible;
+    height: auto;
+    margin-block-end: 1em;
+  }
+
+  h1 small{
+    font-size: 100%;
+  }
+
+  h2{
+    float: initial;
+    margin-inline: 0;
+    padding: .5em;
+  }
+  
+  h2:before, i.month:after{
+    content: initial;
+  }
+  
+  i.day{
+    float: none;
+  }
+  
+  i.day, i.month, i.year{
+    font-size: 125%;
+  }
+  
+  body > ol,
+  div.section > ol{
+    column-width: 40em;
+    column-gap: 3em;
+  }
+  
+  body > ol > li:not(:only-child),
+  div.section > ol > li:not(:only-child){
+    break-inside: avoid;
+  }
+  
+  li{
+    /* Reset */
+    padding: 0;
+  }
+  
+  body > ol > li + li,
+  div.section > ol > li + li{
+    margin-top: 1em;
+  }
+  
+  .floatright{
+    float: none;
+  }
+  
+  img, pre{
+    max-height: 20em;
+    vertical-align: top;
+  }
+  
+  pre{
+    display: block;
+    overflow: auto;
+  }
+  
+  li ol, ul, dl, p, table{
+    margin-block: .5em;
+    margin-inline: 0;
+  }
+  
+  blockquote{
+    margin-block: .5em;
+    margin-inline-start: 1em;
+    margin-inline-end: 0;
+    border-color: gray;
+  }
+  
+  code, var, samp, kbd, pre{
+    font-family: monospace;
+  }
+  
+  kbd, samp, code{
+    display: inline-block;
+    margin-block: 1px;
+  }
+  
+  kbd, samp, code, ins, del{
+    /* Don't inherit text-indent */
+    text-indent: 0;
+  }
+  
+  var{
+    color: orange;
+  }
+}
