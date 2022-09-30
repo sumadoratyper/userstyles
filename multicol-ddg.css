@@ -1,0 +1,94 @@
+/* ==UserStyle==
+@name         Multicol DuckDuckGo
+@version      2022.09.30
+@namespace    https://github.com/sumadoratyper/userstyles
+@homepage     https://github.com/sumadoratyper/userstyles
+@description  DuckDuckGo in multi-column view
+@author       teterumu
+@license      MIT
+==/UserStyle== */
+
+@-moz-document url-prefix("https://duckduckgo.com/?q=") {
+  div.site-wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .is-not-mobile-device,
+  .is-not-mobile-device body,
+  .is-not-mobile-device .site-wrapper,
+  .is-link-style-exp.is-not-mobile-device #links_wrapper,
+  .is-not-mobile-device .serp__results{
+    min-width: initial !important;
+  }
+
+  div.header__search-wrap{
+    padding-left: 60px;
+  }
+
+  a.header__logo-wrap{
+    justify-content: initial;
+  }
+
+  span.header__logo{
+    margin-left: 7px;
+  }
+
+  div#duckbar{
+    padding-left: 0;
+  }
+
+  div#links_wrapper{
+    padding-left: 0;
+  }
+
+  div#web_content_wrapper > div.cw,
+  div.results--main{
+    max-width: initial;
+  }
+
+  div#links{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 90em){
+    div.nrn-react-div{
+      flex-basis: calc((100% - 3em) / 3);
+      min-width: calc((100% - 3em) / 3);
+      margin: 0 1em 1em 0;
+      border-top: thin solid gray;
+    }
+  }
+
+  @media (max-width: 89.9em) and (min-width: 60em){
+    div.nrn-react-div{
+      flex-basis: calc((100% - 2em) / 2);
+      min-width: calc((100% - 2em) / 2);
+      margin: 0 1em 1em 0;
+      border-top: thin solid gray;
+    }
+  }
+
+  div.has-pagenum{
+    display: none !important;
+  }
+
+  div.result--more{
+    flex-basis:100%;
+  }
+
+  div.module-slot{
+     display: none;
+  }
+
+  div.FTrf7TqAcfxxEQ_3nfUg,
+  div.feedback-btn,
+  div.results--sidebar{
+    display: none !important;
+  }
+
+  div.zci__main{
+    padding-left: 0;
+  }
+}
