@@ -1,0 +1,89 @@
+/* ==UserStyle==
+@name         Multicol Google Search
+@version      2022.10.02
+@namespace    https://github.com/sumadoratyper/userstyles
+@homepageURL  https://github.com/sumadoratyper/userstyles
+@description  Google Search in multi-column view
+@author       teterumu
+@license      MIT
+==/UserStyle== */
+
+@-moz-document regexp("^https://www\\.google\\.com/search\\?(?!.*tbm=(nws|isch|shop)).*$") {
+  div#rcnt{
+    display: block !important;
+    max-width: 100% !important;
+    width: auto !important;
+    margin-inline: 0 1em;
+  }
+
+  div#searchform{
+    position: absolute !important;
+  }
+
+  div.main, div.CvDJxb{
+    min-width: initial;
+  }
+
+  div#center_col{
+    width: initial;
+  }
+
+  div#rso{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div#rso > div{
+    width: auto !important;
+  }
+
+  div.g{
+    overflow: hidden;
+  }
+
+  @media (min-width: 60em){
+    div#center_col{
+      margin-left: 0;
+    }
+
+    div#rso > div{
+      margin: 0 0 0 1em;
+      padding: .25em 0;
+      box-sizing: border-box;
+      border-top: thin solid gray;
+    }
+  }
+
+  @media (min-width: 90em){
+    div#rso > div{
+      flex-basis: calc((100% - 3em) / 3);
+      min-width: calc((100% - 3em) / 3);
+    }
+  }
+
+  @media (max-width: 89.9em) and (min-width: 60em){
+    div#rso > div{
+      flex-basis: calc((100% - 2em) / 2);
+      min-width: calc((100% - 2em) / 2);
+    }
+  }
+
+  div.g, div[style="width:600px"]{
+    width: auto !important;
+  }
+
+  div.ULSxyf,
+  div#rhs,
+  table.jmjoTe,
+  ul.FxLDp{
+    display: none;
+  }
+
+  div#botstuff{
+    margin-inline: 1em;
+  }
+
+  div#sfooter{
+    display: none;
+  }
+}
