@@ -2,7 +2,7 @@
 @name         Typing Tube
 @version      2022.09.30
 @namespace    https://github.com/sumadoratyper/userstyles
-@homepage     https://github.com/sumadoratyper/userstyles
+@homepageURL  https://github.com/sumadoratyper/userstyles
 @description  Userstyle for Typing Tube
 @author       teterumu
 @license      MIT
@@ -16,54 +16,54 @@
   section.content{
     padding: 0 !important;
   }
-  
+
   div#main_content > div.wrapper{
     margin-left: calc(250px + 15px + 2%);
     margin-right: 2%;
     max-width: initial;
   }
-  
-  div#main_content > div.wrapper:nth-of-type(1) > ul.taglist{ 
+
+  div#main_content > div.wrapper:nth-of-type(1) > ul.taglist{
     padding-left: 0;
   }
-  
+
   div#main_content > div.wrapper:nth-of-type(2){
     display: none;
   }
-  
+
   div#main_content > div.wrapper:last-of-type{
     display: block;
   }
-  
+
   div#controlbox > div.playarea{
     padding-left: 0;
   }
-  
+
   div#typing_practice_mode{
     margin-top: 3em;
   }
-  
+
   div#main_content > div.wrapper:last-of-type > section{
     display: none;
   }
-  
+
   div#main_content > div.wrapper:last-of-type > div.wrapper:last-of-type{
     max-width: initial;
   }
-  
+
   div#main_content > div.wrapper:last-of-type > div.wrapper:last-of-type > div.wrapper{
     max-width: initial;
     margin: 0;
   }
-  
+
   div#kashi_roma{
     text-transform: var(--romaji-style) !important;
   }
-  
+
   div#kashi{
     text-indent: -1em;
   }
-  
+
   div#kashi br, div#kashi_next br{
     display: none;
   }
