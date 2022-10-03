@@ -8,6 +8,17 @@
 @license      MIT
 ==/UserStyle== */
 
+/*
+   2022-10-04: Google's SERP has different DOM generated for non-logged-in
+   and logged-in users, and this userstyle sometimes breaks the page when the
+   user is logged in. The DOM for logged-in users is extremely bad. It seems to
+   be impossible to fix this problem with CSS only. So please use it with
+   non-logged-in state.
+
+   I always open google.com with non-logged-in state using Multi Account Container
+   (https://addons.mozilla.org/ja/firefox/addon/multi-account-containers/).
+*/
+
 @-moz-document regexp("^https://www\\.google\\.com/search\\?(?!.*tbm=(nws|isch|shop)).*$") {
   body, div.CvDJxb{
     max-width: 1920px;
