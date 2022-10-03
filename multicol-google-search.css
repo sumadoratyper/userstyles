@@ -9,6 +9,11 @@
 ==/UserStyle== */
 
 @-moz-document regexp("^https://www\\.google\\.com/search\\?(?!.*tbm=(nws|isch|shop)).*$") {
+  body, div.CvDJxb{
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
   div#rcnt{
     display: block !important;
     max-width: 100% !important;
