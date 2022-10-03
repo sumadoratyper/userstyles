@@ -52,12 +52,17 @@
     flex-wrap: wrap;
   }
 
+  @media (min-width: 60em){
+    div.nrn-react-div{
+      margin: 0 1em 1em 0;
+      border-top: thin solid gray;
+    }
+  }
+
   @media (min-width: 90em){
     div.nrn-react-div{
       flex-basis: calc((100% - 3em) / 3);
       min-width: calc((100% - 3em) / 3);
-      margin: 0 1em 1em 0;
-      border-top: thin solid gray;
     }
   }
 
@@ -65,8 +70,6 @@
     div.nrn-react-div{
       flex-basis: calc((100% - 2em) / 2);
       min-width: calc((100% - 2em) / 2);
-      margin: 0 1em 1em 0;
-      border-top: thin solid gray;
     }
   }
 
