@@ -13,7 +13,7 @@
     display: block !important;
     max-width: 100% !important;
     width: auto !important;
-    margin-inline: 0 1em;
+    margin-inline: 1em;
   }
 
   div#searchform{
@@ -31,6 +31,7 @@
   div#rso{
     display: flex;
     flex-wrap: wrap;
+    column-gap: 1em;
   }
 
   div#rso > div{
@@ -47,7 +48,6 @@
     }
 
     div#rso > div{
-      margin: 0 0 0 1em;
       padding: .25em 0;
       box-sizing: border-box;
       border-top: thin solid gray;
@@ -56,15 +56,15 @@
 
   @media (min-width: 90em){
     div#rso > div{
-      flex-basis: calc((100% - 3em) / 3);
-      min-width: calc((100% - 3em) / 3);
+      flex-basis: calc((100% - 2em) / 3);
+      min-width: calc((100% - 2em) / 3);
     }
   }
 
   @media (max-width: 89.9em) and (min-width: 60em){
     div#rso > div{
-      flex-basis: calc((100% - 2em) / 2);
-      min-width: calc((100% - 2em) / 2);
+      flex-basis: calc((100% - 1em) / 2);
+      min-width: calc((100% - 1em) / 2);
     }
   }
 
