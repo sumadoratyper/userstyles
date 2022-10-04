@@ -14,6 +14,18 @@
     max-width: 72em;
   }
 
+  header nav.nav{
+    display: block;
+    text-align: right;
+    font-size: 100%;
+  }
+
+  header nav.nav > a.nav-item{
+    display: inline;
+    margin-inline-start: 1em;
+    padding: 0;
+  }
+
   div#___gcse_0,
   footer.nocontent > div.row{
     display: none;
