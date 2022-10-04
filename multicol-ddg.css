@@ -74,7 +74,8 @@
     }
   }
 
-  div.has-pagenum{
+  div.has-pagenum,
+  div.js-result-hidden-el{
     display: none !important;
   }
 
