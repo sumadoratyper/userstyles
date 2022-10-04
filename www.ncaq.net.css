@@ -28,6 +28,10 @@
     display: none;
   }
 
+  a.entry-link{
+    color: inherit;
+  }
+
   ol.list-group{
     display: block;
   }
