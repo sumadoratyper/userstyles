@@ -13,4 +13,8 @@
     width: 95%;
     max-width: 72em;
   }
+
+  footer.nocontent > div.row{
+    display: none;
+  }
 }
