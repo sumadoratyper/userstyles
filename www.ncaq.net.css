@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         www.ncaq.net
+@version      2022.10.04
+@namespace    https://github.com/sumadoratyper/userstyles
+@homepageURL  https://github.com/sumadoratyper/userstyles
+@description  Userstyle for www.ncaq.net
+@author       teterumu
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("www.ncaq.net") {
+  .top-level-container{
+    width: 95%;
+    max-width: 72em;
+  }
+}
