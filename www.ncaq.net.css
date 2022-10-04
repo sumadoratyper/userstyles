@@ -28,6 +28,34 @@
     background-color: inherit;
   }
 
+  article > h1{
+    font-size: 250%;
+  }
+
+  article > section > h1{
+    font-size: 175%;
+  }
+
+  h2{
+    font-size: 150%;
+  }
+
+  h3{
+    font-size: 135%;
+  }
+
+  h4{
+    font-size: 120%;
+  }
+
+  h5{
+    font-size: 110%;
+  }
+
+  h6{
+    font-size: 100%;
+  }
+
   header nav.nav > a.nav-item{
     display: inline;
     margin-inline-start: 1em;
