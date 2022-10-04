@@ -10,8 +10,8 @@
 
 /*
    2022-10-04: Google's SERP has different DOM generated for non-logged-in
-   and logged-in users, and this userstyle sometimes breaks the page when the
-   user is logged-in. The DOM for logged-in users is extremely bad. It seems to
+   and logged-in user, and this userstyle sometimes breaks the page when the
+   user is logged-in. The DOM for logged-in user is extremely bad. It seems to
    be impossible to fix this problem with CSS only. So please use it with
    non-logged-in state.
 
