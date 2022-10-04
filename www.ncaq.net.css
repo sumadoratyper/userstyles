@@ -24,10 +24,20 @@
     font-size: 100%;
   }
 
+  header nav.nav > a.nav-item{
+    display: inline;
+    margin-inline-start: 1em;
+    padding: 0;
+  }
+
+  div#___gcse_0,
+  footer.nocontent > div.row{
+    display: none;
+  }
+
   header, footer, h1, h2, h3, h4, h5, h6{
     background-color: inherit;
   }
-
   article > h1{
     font-size: 250%;
   }
@@ -54,16 +64,5 @@
 
   h6{
     font-size: 100%;
-  }
-
-  header nav.nav > a.nav-item{
-    display: inline;
-    margin-inline-start: 1em;
-    padding: 0;
-  }
-
-  div#___gcse_0,
-  footer.nocontent > div.row{
-    display: none;
   }
 }
