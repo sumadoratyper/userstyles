@@ -24,6 +24,10 @@
     font-size: 100%;
   }
 
+  header, footer, h1, h2, h3, h4, h5, h6{
+    background-color: inherit;
+  }
+
   header nav.nav > a.nav-item{
     display: inline;
     margin-inline-start: 1em;
