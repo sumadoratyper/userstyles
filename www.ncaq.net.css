@@ -69,4 +69,13 @@
   blockquote{
     font-size: 100%;
   }
+
+  code, samp, kbd{
+    padding-inline: .1em;
+  }
+
+  code{
+    font-size: 100%;
+    background-color: #1f4a54;
+  }
 }
