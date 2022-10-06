@@ -9,11 +9,14 @@
 ==/UserStyle== */
 
 /*
-   2022-10-04: Google's SERP has different DOM generated for non-logged-in
-   and logged-in user, and this userstyle sometimes breaks the page when the
-   user is logged-in. The DOM for logged-in user is extremely bad. It seems to
-   be impossible to fix this problem with CSS only. So please use it with
+   Google's SERP has different DOM generated for non-logged-in and logged-in
+   user, and this userstyle sometimes breaks the page when the user is
+   logged-in. The DOM for logged-in user is extremely bad. It seems to be
+   impossible to fix this problem with CSS only. So please use it with
    non-logged-in state.
+
+   However, when the language setting is set to Japanese (ja) or Traditional
+   Chinese (zh-TW), this issue does not occur.
 
    I always open google.com with non-logged-in state using Multi-Account Containers
    (https://addons.mozilla.org/ja/firefox/addon/multi-account-containers/).
