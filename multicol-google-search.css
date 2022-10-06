@@ -52,7 +52,9 @@
     column-gap: 1em;
   }
 
-  div#rso > div{
+  div#rso > div,
+  div.g,
+  div[style="width:600px"]{
     width: auto !important;
   }
 
@@ -88,10 +90,6 @@
       flex-basis: calc((100% - 1em) / 2);
       min-width: calc((100% - 1em) / 2);
     }
-  }
-
-  div.g, div[style="width:600px"]{
-    width: auto !important;
   }
 
   div.ULSxyf,
