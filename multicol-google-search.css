@@ -8,20 +8,6 @@
 @license      MIT
 ==/UserStyle== */
 
-/*
-   Google's SERP has different DOM generated for non-logged-in and logged-in
-   user, and this userstyle sometimes breaks the page when the user is
-   logged-in. The DOM for logged-in user is extremely bad. It seems to be
-   impossible to fix this problem with CSS only. So please use it with
-   non-logged-in state.
-
-   However, when the language setting is set to Japanese (ja) or Traditional
-   Chinese (zh-TW), this issue does not occur.
-
-   I always open google.com with non-logged-in state using Multi-Account Containers
-   (https://addons.mozilla.org/ja/firefox/addon/multi-account-containers/).
-*/
-
 @-moz-document regexp("^https://www\\.google\\.com/search\\?(?!.*tbm=(nws|isch|shop)).*$") {
   body, div.CvDJxb{
     max-width: 1920px;
@@ -46,7 +32,8 @@
     width: initial;
   }
 
-  div#rso{
+  div#rso:has(> div.MjjYud),
+  div#rso:not(:has(> div.MjjYud)) > div:not([class]){
     display: flex;
     flex-wrap: wrap;
     column-gap: 1em;
@@ -71,7 +58,8 @@
       margin-left: 0;
     }
 
-    div#rso > div{
+    div#rso:has(> div.MjjYud) > div,
+    div#rso:not(:has(> div.MjjYud)) > div:not([class]) > div{
       padding: .25em 0;
       box-sizing: border-box;
       border-top: thin solid gray;
@@ -79,22 +67,26 @@
   }
 
   @media (min-width: 90em){
-    div#rso > div{
+    div#rso:has(> div.MjjYud) > div,
+    div#rso:not(:has(> div.MjjYud)) > div:not([class]) > div{
       flex-basis: calc((100% - 2em) / 3);
       min-width: calc((100% - 2em) / 3);
     }
   }
 
   @media (max-width: 89.9em) and (min-width: 60em){
-    div#rso > div{
+    div#rso:has(> div.MjjYud) > div,
+    div#rso:not(:has(> div.MjjYud)) > div:not([class]) > div{
       flex-basis: calc((100% - 1em) / 2);
       min-width: calc((100% - 1em) / 2);
     }
   }
 
   div#rso > hr,
-  div.ULSxyf,
+  div#rso > div.ULSxyf,
+  div.ULSxyf:has(div.AuVD),
   div#rhs,
+  div#bres,
   table.jmjoTe,
   ul.FxLDp{
     display: none;
