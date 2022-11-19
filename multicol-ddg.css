@@ -75,7 +75,8 @@
   }
 
   div.has-pagenum,
-  div.js-result-hidden-el{
+  div.js-result-hidden-el,
+  div.nrn-divider-div{
     display: none !important;
   }
 
