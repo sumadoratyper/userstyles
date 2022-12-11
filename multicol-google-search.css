@@ -60,9 +60,12 @@
 
     div#rso:has(> div.MjjYud) > div,
     div#rso:not(:has(> div.MjjYud)) > div:not([class]) > div{
-      padding: .25em 0;
+      margin-bottom: 1em;
+      padding: .5em;
+      border: thin solid silver;
+      border-radius: .5em;
       box-sizing: border-box;
-      border-top: thin solid gray;
+      box-shadow: .2em .2em .2em #ddddee;
     }
   }
 
