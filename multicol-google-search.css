@@ -67,6 +67,10 @@
       box-sizing: border-box;
       box-shadow: .2em .2em .2em #ddddee;
     }
+
+    div.g, div.vt6azd, div.hlcw0c{
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: 90em){
