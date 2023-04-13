@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Multicol DuckDuckGo
-@version      2022.12.11
+@version      2023.04.13
 @namespace    https://github.com/sumadoratyper/userstyles
 @homepageURL  https://github.com/sumadoratyper/userstyles
 @description  DuckDuckGo in multi-column view
@@ -8,7 +8,7 @@
 @license      MIT
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://duckduckgo.com/?q=") {
+@-moz-document url-prefix("https://duckduckgo.com/?") {
   div.site-wrapper{
     max-width: 1920px;
     margin: 0 auto;
