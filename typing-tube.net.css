@@ -14,7 +14,7 @@
   }
 
   section.content{
-    padding: 0 !important;
+    padding-inline: 0 !important;
   }
 
   div#main_content > div.wrapper{
@@ -37,6 +37,10 @@
 
   div#controlbox > div.playarea{
     padding-left: 0;
+  }
+
+  div#youtube-movie{
+    aspect-ratio: initial !important;
   }
 
   div#typing_practice_mode{
