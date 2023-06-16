@@ -14,14 +14,6 @@
     margin: 0 auto;
   }
 
-  .is-not-mobile-device,
-  .is-not-mobile-device body,
-  .is-not-mobile-device .site-wrapper,
-  .is-link-style-exp.is-not-mobile-device #links_wrapper,
-  .is-not-mobile-device .serp__results{
-    min-width: initial !important;
-  }
-
   div.header__search-wrap{
     padding-left: 60px;
   }
@@ -42,19 +34,35 @@
     padding-left: 0;
   }
 
-  div#web_content_wrapper > div.cw,
-  div.results--main{
+  div.cw{
     max-width: initial;
   }
 
-  div#links{
+  div.zci__main{
+    padding-left: 0;
+  }
+
+  /* Display search results in multi-columns according to view width */
+  div#react-layout > div > div,
+  div#react-layout > div > div > section{
+    display: block;
+    max-width: initial;
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  div#react-layout > div > div > section{
+    padding-inline: 1em;
+  }
+
+  ol.react-results--main{
     display: flex;
     flex-wrap: wrap;
     column-gap: 1em;
   }
 
   @media (min-width: 60em){
-    div.nrn-react-div{
+    ol.react-results--main > li{
       margin: 0 0 1em;
       border: thin solid silver;
       border-radius: .5em;
@@ -64,40 +72,30 @@
   }
 
   @media (min-width: 90em){
-    div.nrn-react-div{
+    ol.react-results--main > li{
       flex-basis: calc((100% - 2em) / 3);
       min-width: calc((100% - 2em) / 3);
     }
   }
 
   @media (max-width: 89.9em) and (min-width: 60em){
-    div.nrn-react-div{
+    ol.react-results--main > li{
       flex-basis: calc((100% - 1em) / 2);
       min-width: calc((100% - 1em) / 2);
     }
   }
 
-  div.has-pagenum,
-  div.js-result-hidden-el,
-  div.nrn-divider-div{
+  /* Remove page numbers */
+  ol.react-results--main > li > div[arial-label]{
+    display: none;
+  }
+
+  /* Remove module slots, footer contents and feedback button */
+  li.L6fj2A3X2mfJl5kE8caF,
+  div.footer,
+  div.serp__bottom-right{
     display: none !important;
   }
 
-  div.result--more{
-    flex-basis:100%;
-  }
-
-  div.module-slot{
-     display: none;
-  }
-
-  div.FTrf7TqAcfxxEQ_3nfUg,
-  div.feedback-btn,
-  div.results--sidebar{
-    display: none !important;
-  }
-
-  div.zci__main{
-    padding-left: 0;
-  }
 }
+
